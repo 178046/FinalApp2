@@ -13,6 +13,11 @@
 		2413E7C2263D957B00FBE2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413E7C0263D957B00FBE2EB /* Main.storyboard */; };
 		2413E7C4263D957B00FBE2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2413E7C3263D957B00FBE2EB /* Assets.xcassets */; };
 		2413E7C7263D957B00FBE2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413E7C5263D957B00FBE2EB /* LaunchScreen.storyboard */; };
+		2413E7D0263D994200FBE2EB /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413E7CF263D994200FBE2EB /* ChooseViewController.swift */; };
+		2413E7D3263DA70700FBE2EB /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413E7D2263DA70700FBE2EB /* LocationViewController.swift */; };
+		2413E7DC263DB59C00FBE2EB /* OnTimeBSA.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2413E7DB263DB59C00FBE2EB /* OnTimeBSA.jpeg */; };
+		2413E7DF263DB76100FBE2EB /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2413E7DE263DB76100FBE2EB /* download.jpeg */; };
+		2413E7E2263DB77C00FBE2EB /* RMTD-System-Map.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2413E7E1263DB77C00FBE2EB /* RMTD-System-Map.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		2413E7C3263D957B00FBE2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2413E7C6263D957B00FBE2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2413E7C8263D957B00FBE2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2413E7CF263D994200FBE2EB /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		2413E7D2263DA70700FBE2EB /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		2413E7DB263DB59C00FBE2EB /* OnTimeBSA.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OnTimeBSA.jpeg; sourceTree = "<group>"; };
+		2413E7DE263DB76100FBE2EB /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		2413E7E1263DB77C00FBE2EB /* RMTD-System-Map.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RMTD-System-Map.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		2413E7B9263D957B00FBE2EB /* TESTAPP */ = {
 			isa = PBXGroup;
 			children = (
+				2413E7D5263DAE8D00FBE2EB /* Images */,
 				2413E7BA263D957B00FBE2EB /* AppDelegate.swift */,
 				2413E7BC263D957B00FBE2EB /* SceneDelegate.swift */,
 				2413E7BE263D957B00FBE2EB /* ViewController.swift */,
@@ -63,8 +74,20 @@
 				2413E7C3263D957B00FBE2EB /* Assets.xcassets */,
 				2413E7C5263D957B00FBE2EB /* LaunchScreen.storyboard */,
 				2413E7C8263D957B00FBE2EB /* Info.plist */,
+				2413E7CF263D994200FBE2EB /* ChooseViewController.swift */,
+				2413E7D2263DA70700FBE2EB /* LocationViewController.swift */,
 			);
 			path = TESTAPP;
+			sourceTree = "<group>";
+		};
+		2413E7D5263DAE8D00FBE2EB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2413E7E1263DB77C00FBE2EB /* RMTD-System-Map.jpeg */,
+				2413E7DE263DB76100FBE2EB /* download.jpeg */,
+				2413E7DB263DB59C00FBE2EB /* OnTimeBSA.jpeg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +147,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2413E7DC263DB59C00FBE2EB /* OnTimeBSA.jpeg in Resources */,
 				2413E7C7263D957B00FBE2EB /* LaunchScreen.storyboard in Resources */,
+				2413E7DF263DB76100FBE2EB /* download.jpeg in Resources */,
 				2413E7C4263D957B00FBE2EB /* Assets.xcassets in Resources */,
+				2413E7E2263DB77C00FBE2EB /* RMTD-System-Map.jpeg in Resources */,
 				2413E7C2263D957B00FBE2EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +165,8 @@
 			files = (
 				2413E7BF263D957B00FBE2EB /* ViewController.swift in Sources */,
 				2413E7BB263D957B00FBE2EB /* AppDelegate.swift in Sources */,
+				2413E7D0263D994200FBE2EB /* ChooseViewController.swift in Sources */,
+				2413E7D3263DA70700FBE2EB /* LocationViewController.swift in Sources */,
 				2413E7BD263D957B00FBE2EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
