@@ -6,6 +6,7 @@
 //
 import UIKit
 import MapKit
+import AVKit
 
 
 class HomePageViewController: UIViewController , CLLocationManagerDelegate, MKMapViewDelegate  {
@@ -14,10 +15,17 @@ class HomePageViewController: UIViewController , CLLocationManagerDelegate, MKMa
             let authorizationStatus = CLLocationManager.authorizationStatus()
             let regionRadius: Double = 1000
         @IBOutlet weak var map: MKMapView!
-        
+    let player = AVQueuePlayer()
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             map.delegate = self
+            // define audio play
+            if let url = Bundle.main.url(forResource: "Bus", withExtension: "m4a") {
+        
+        player.insert(AVPlayerItem(url: url), after: nil)
+                player.play()
+            }
                    locationManager.delegate = self
                    configureLocationServices()
             // Do any additional setup after loading the view.

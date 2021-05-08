@@ -18,6 +18,9 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-iY-No7">
                                 <rect key="frame" x="0.0" y="53" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Zgi-6m-0b5"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="RMTD Day Route" id="phn-jM-P1y">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="3X8-4Z-h6Q"/>
@@ -29,14 +32,22 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RMTD-System-Map.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Fq0-YJ-4A5">
+                                <rect key="frame" x="20" y="229" width="374" height="528"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="528" id="oex-Z5-J28"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="TIy-iY-No7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uqj-MU-5In"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TIy-iY-No7" secondAttribute="bottom" constant="711" id="aSu-27-H2I"/>
-                            <constraint firstItem="TIy-iY-No7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dDM-yK-L2J"/>
-                            <constraint firstItem="TIy-iY-No7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="reb-2v-YTB"/>
+                            <constraint firstItem="TIy-iY-No7" firstAttribute="centerX" secondItem="Fq0-YJ-4A5" secondAttribute="centerX" id="4ym-lb-xKr"/>
+                            <constraint firstItem="TIy-iY-No7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="9KI-hu-qpG"/>
+                            <constraint firstItem="TIy-iY-No7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RXs-dX-0jJ"/>
+                            <constraint firstItem="Fq0-YJ-4A5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y69-VP-mF2"/>
+                            <constraint firstItem="Fq0-YJ-4A5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fA8-IA-lSq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fq0-YJ-4A5" secondAttribute="bottom" constant="51" id="izK-Zw-h2n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="izG-TD-Wle"/>
@@ -59,7 +70,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ans-Ib-XGX">
                                 <rect key="frame" x="0.0" y="44" width="414" height="54"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="VZM-oR-54D"/>
+                                    <constraint firstAttribute="height" constant="54" id="LfW-4h-x08"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Select/Enter Location" id="yat-Lx-tMJ">
@@ -74,34 +85,47 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="uS5-rR-feF">
                                 <rect key="frame" x="20" y="98" width="374" height="348"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Near 1200 W. State St." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AE9-be-Fwb">
-                                <rect key="frame" x="159" y="325" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Near 1200 W. State St." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AE9-be-Fwb">
+                                <rect key="frame" x="87" y="338" width="240" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4Yj-qC-71g">
                                 <rect key="frame" x="20" y="367" width="354" height="463"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="463" id="h0r-y5-bUj"/>
+                                    <constraint firstAttribute="height" constant="463" id="eys-P1-mxk"/>
                                 </constraints>
                             </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Estimated Time to Arrival at Your Location is 30 seconds..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LBj-Xd-rE6">
+                                <rect key="frame" x="68" y="397" width="259" height="78"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="uup-Dd-Rb4"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q2W-SJ-HUg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uS5-rR-feF" firstAttribute="centerX" secondItem="AE9-be-Fwb" secondAttribute="centerX" id="8O8-Gl-Gh8"/>
-                            <constraint firstItem="4Yj-qC-71g" firstAttribute="top" secondItem="AE9-be-Fwb" secondAttribute="bottom" constant="8" id="CXZ-SF-ILc"/>
-                            <constraint firstItem="Q2W-SJ-HUg" firstAttribute="bottom" secondItem="uS5-rR-feF" secondAttribute="bottom" constant="362" id="DlB-y3-NQJ"/>
-                            <constraint firstItem="Ans-Ib-XGX" firstAttribute="leading" secondItem="Q2W-SJ-HUg" secondAttribute="leading" id="EDO-eo-sBV"/>
-                            <constraint firstItem="uS5-rR-feF" firstAttribute="top" secondItem="Ans-Ib-XGX" secondAttribute="bottom" id="K7o-fQ-TQq"/>
-                            <constraint firstItem="uS5-rR-feF" firstAttribute="trailing" secondItem="sHM-Ok-b97" secondAttribute="trailingMargin" id="LGC-mC-nON"/>
-                            <constraint firstItem="Ans-Ib-XGX" firstAttribute="top" secondItem="Q2W-SJ-HUg" secondAttribute="top" constant="44" id="SZJ-YN-HRd"/>
-                            <constraint firstItem="uS5-rR-feF" firstAttribute="leading" secondItem="sHM-Ok-b97" secondAttribute="leadingMargin" id="ZXF-za-AvR"/>
-                            <constraint firstItem="AE9-be-Fwb" firstAttribute="leading" secondItem="Q2W-SJ-HUg" secondAttribute="leading" constant="159" id="aCB-dI-oD8"/>
-                            <constraint firstItem="uS5-rR-feF" firstAttribute="leading" secondItem="4Yj-qC-71g" secondAttribute="leading" id="oSI-Ym-bdr"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="4Yj-qC-71g" secondAttribute="bottom" constant="-22" id="x5d-I1-Tt8"/>
-                            <constraint firstItem="Ans-Ib-XGX" firstAttribute="centerX" secondItem="AE9-be-Fwb" secondAttribute="centerX" id="xkP-9r-HZd"/>
-                            <constraint firstItem="Q2W-SJ-HUg" firstAttribute="trailing" secondItem="4Yj-qC-71g" secondAttribute="trailing" constant="40" id="xuR-Za-Nbt"/>
+                            <constraint firstItem="Q2W-SJ-HUg" firstAttribute="trailing" secondItem="4Yj-qC-71g" secondAttribute="trailing" constant="40" id="1AJ-Ph-xOm"/>
+                            <constraint firstItem="Q2W-SJ-HUg" firstAttribute="bottom" secondItem="uS5-rR-feF" secondAttribute="bottom" constant="362" id="7El-yk-IU3"/>
+                            <constraint firstItem="Ans-Ib-XGX" firstAttribute="centerX" secondItem="AE9-be-Fwb" secondAttribute="centerX" id="Btx-AU-v4h"/>
+                            <constraint firstItem="LBj-Xd-rE6" firstAttribute="top" secondItem="AE9-be-Fwb" secondAttribute="bottom" constant="25" id="G2m-1n-PGS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4Yj-qC-71g" secondAttribute="bottom" constant="-22" id="KoI-JR-c7l"/>
+                            <constraint firstItem="uS5-rR-feF" firstAttribute="leading" secondItem="4Yj-qC-71g" secondAttribute="leading" id="TCp-4d-Ctt"/>
+                            <constraint firstItem="uS5-rR-feF" firstAttribute="top" secondItem="Ans-Ib-XGX" secondAttribute="bottom" id="UDp-es-ikT"/>
+                            <constraint firstItem="uS5-rR-feF" firstAttribute="leading" secondItem="sHM-Ok-b97" secondAttribute="leadingMargin" id="ZpK-sP-J4U"/>
+                            <constraint firstItem="uS5-rR-feF" firstAttribute="trailing" secondItem="sHM-Ok-b97" secondAttribute="trailingMargin" id="b2N-qn-1NO"/>
+                            <constraint firstItem="Q2W-SJ-HUg" firstAttribute="bottom" secondItem="LBj-Xd-rE6" secondAttribute="bottom" constant="333" id="hOM-Qh-TDB"/>
+                            <constraint firstItem="AE9-be-Fwb" firstAttribute="trailing" secondItem="LBj-Xd-rE6" secondAttribute="trailing" id="j9d-tA-oKb"/>
+                            <constraint firstItem="Ans-Ib-XGX" firstAttribute="leading" secondItem="Q2W-SJ-HUg" secondAttribute="leading" id="kF7-kV-PY2"/>
+                            <constraint firstItem="uS5-rR-feF" firstAttribute="centerX" secondItem="AE9-be-Fwb" secondAttribute="centerX" id="umK-5l-U0B"/>
+                            <constraint firstItem="Ans-Ib-XGX" firstAttribute="top" secondItem="Q2W-SJ-HUg" secondAttribute="top" constant="44" id="vGO-sY-vmQ"/>
+                            <constraint firstItem="4Yj-qC-71g" firstAttribute="centerX" secondItem="LBj-Xd-rE6" secondAttribute="centerX" id="vX0-1e-Eas"/>
+                            <constraint firstItem="AE9-be-Fwb" firstAttribute="leading" secondItem="Q2W-SJ-HUg" secondAttribute="leading" constant="87" id="zPP-44-ZlT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y7B-j5-FyS"/>
@@ -161,9 +185,13 @@
     </scenes>
     <resources>
         <image name="OnTimeBSA.jpeg" width="768" height="1024"/>
+        <image name="RMTD-System-Map.jpeg" width="600" height="429"/>
         <image name="download.jpeg" width="357" height="141"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
